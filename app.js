@@ -12,3 +12,8 @@ function getPin() {
     return getPin();
   }
 }
+document.getElementById('key-pad').addEventListener('click', function(event){
+    const num =  event.target.innerText
+    const inputNumber = document.getElementById('input-number')
+    inputNumber.value = num
+})
